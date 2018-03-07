@@ -1,0 +1,31 @@
+
+# This is a TOML document.
+
+title = "LCollector Config TOML"
+
+[app]
+name      = "综合数据管理系统"
+logo      = ""
+summary   = "综合数据管理系统"
+version   = "1.0.0"
+copyright = "北京绿舟远智科技有限公司"
+qq        = "3158506191"
+wechat    = "BJ-LZYZ"
+website   = "http://www.wisdboat.com"
+
+[system]
+server_port = ":9092"  #服务器端口
+valid_times = 7200     #设置Token有效期默认为2小时
+check_token = false    #是否需要校验token
+grid_column = 5        #九宫格列数
+
+[mongo]
+host     = "106.14.2.153:27017"
+database = "Collector"
+username = ""
+password = ""
+
+[logger]
+enable_operate_log = true               #操作日志开关
+enable_message_log = true               #消息日志开关
+log_path           = "/user/local/log"  #log日志保存的绝对路径
